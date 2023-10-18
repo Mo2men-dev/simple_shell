@@ -26,8 +26,7 @@ typedef struct node_t
 	struct node_t *next;
 } node_t;
 
-<<<<<<< HEAD
-=======
+
 /**
  * struct global_struct_t - A struct of global vars for the shell program.
  *
@@ -36,7 +35,6 @@ typedef struct node_t
  * @status: Integer representing the exit status of the last executed command.
  * @curr_cmd: Pointer to the str containing the curr command being processed.
 */
->>>>>>> d6c338b2172ff5e393c7a904b6e80235c3445baf
 typedef struct global_struct_t
 {
 	char *p_name;
