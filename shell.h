@@ -14,12 +14,29 @@ extern char **environ;
 #define ERR_STATUS 127
 #define _PATH_ALT "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 
+/**
+ * struct node_t - A structure representing a node in a linked list.
+ *
+ * @str: A pointer to a string stored in the node.
+ * @next: A pointer to the next node in the linked list.
+*/
 typedef struct node_t
 {
 	char *str;
 	struct node_t *next;
 } node_t;
 
+<<<<<<< HEAD
+=======
+/**
+ * struct global_struct_t - A struct of global vars for the shell program.
+ *
+ * @p_name: Pointer to the name of the shell program.
+ * @line_count: Integer representing the current line number being processed.
+ * @status: Integer representing the exit status of the last executed command.
+ * @curr_cmd: Pointer to the str containing the curr command being processed.
+*/
+>>>>>>> d6c338b2172ff5e393c7a904b6e80235c3445baf
 typedef struct global_struct_t
 {
 	char *p_name;
