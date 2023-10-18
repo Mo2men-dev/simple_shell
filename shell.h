@@ -16,21 +16,22 @@ extern char **environ;
 
 typedef struct node_t
 {
-    char *str;
-    struct node_t *next;
+	char *str;
+	struct node_t *next;
 } node_t;
 
-typedef struct global_struct_t {
-    char *p_name;
-    int line_count;
-    int status;
-    char *curr_cmd;
+typedef struct global_struct_t
+{
+	char *p_name;
+	int line_count;
+	int status;
+	char *curr_cmd;
 } global_t;
 
 #define GLOBAL_T_INIT {NULL, 1, 0, NULL}
 
 /* errs.c */
-void _print_err(global_t *global,char *err);
+void _print_err(global_t *global, char *err);
 int print_number(int n, int fd);
 void _eputs(char *str);
 
@@ -63,7 +64,7 @@ int is_alpha(char c);
 void str_helper(char *cmd_path, char *token, char *cmd);
 int hsh(global_t *global, char **argv);
 int exec_cmd(global_t *global, char **argv);
-char *get_path(global_t *global ,char *cmd);
+char *get_path(global_t *global, char *cmd);
 int only_spaces(char *buff, int c_r_i, int c_r);
 
 #endif
